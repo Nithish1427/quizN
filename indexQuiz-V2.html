@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nquiz</title>
+  <link rel="stylesheet" href="styleQuiz-V2.css" />
+</head>
+<body>
+  <div class="start-screen" id="startScreen">
+    <h1>quizN</h1>
+    <p>Select any one of the categories below:</p>
+    <div class="categories">
+      <button onclick="startQuiz('maths')">Maths</button>
+      <button onclick="startQuiz('science')">Science</button>
+      <button onclick="startQuiz('geography')">Geography</button>
+      <button onclick="startQuiz('general')">General</button>
+    </div>
+  </div>
+
+  <div class="quiz-container" id="quizContainer" style="display: none;">
+  <div id="progressContainer">
+    <div id="progressBar"></div>
+  </div>
+
+  <div id="questionBox">
+    <div class="quiz-header">
+      <h2 id="questionNumber"></h2>
+      <div id="timer">Time Left: 60s</div>
+    </div>
+    <h3 id="question"></h3>
+    <div id="answers"></div>
+  </div>
+
+  <button id="nextBtn" onclick="nextQuestion()">Next</button>
+</div>
+
+  <script src="scriptQuiz-V2.js"></script>
+</body>
+</html>
