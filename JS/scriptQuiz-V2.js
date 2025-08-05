@@ -2,37 +2,37 @@ let selectedAnswers = [];
 
 const allQuestions = {
   maths: [
-        {
-            question: "What is the value of 25 × 12 – 150 ÷ 5?",
-            options: ["270", "270.5", "285", "285.5"],
-            answer: "270",
-            explanation: "25 × 12 = 300, 150 ÷ 5 = 30, So, 300 – 30 = 270"
-        },
-        {
-            question: "Find the odd one and replace it : 1, 4, 16, 28, 49 ",
-            options: ["12", "25", "36", "41"],
-            answer: "25",
-            explanation: "the sequence of perfect squares : 1, 4, 9, 16, 25, 36, 49,... here the 9 and 36 are missing but the odd one is 28 instead of 25."
-        },
-        {
-            question: "If a train runs at 60 km/hr and covers 180 km, how long does it take?",
-            options: ["2 hours", "3 hours", "4 hours", "5 hours"],
-            answer: "3 hours",
-            explanation: "Time = Distance ÷ Speed = 180 ÷ 60 = 3 hours"
-        },
-        {
-            question: "What is the average of first five even numbers?",
-            options: ["5", "6", "4", "8"],
-            answer: "6",
-            explanation: "Average = (2 + 4 + 6 + 8 + 10) ÷ 5 <br>= 30 ÷ 5 <br>= 6"
-        },
-        {
-            question: "Who is the GOAT of Football?",
-            options: ["Pele", "Diego Maradona", "Cristiano Ronaldo", "Lionel Messi"],
-            answer: "Lionel Messi",
-            explanation: "No need, because it’s a fact and we all know that."
-        }
-    ],
+    {
+      question: "What is the value of 25 × 12 – 150 ÷ 5?",
+      options: ["270", "270.5", "285", "285.5"],
+      answer: "270",
+      explanation: "25 × 12 = 300, 150 ÷ 5 = 30, So, 300 – 30 = 270"
+    },
+    {
+      question: "Find the odd one and replace it : 1, 4, 16, 28, 49 ",
+      options: ["12", "25", "36", "41"],
+      answer: "25",
+      explanation: "the sequence of perfect squares : 1, 4, 9, 16, 25, 36, 49,... here the 9 and 36 are missing but the odd one is 28 instead of 25."
+    },
+    {
+      question: "If a train runs at 60 km/hr and covers 180 km, how long does it take?",
+      options: ["2 hours", "3 hours", "4 hours", "5 hours"],
+      answer: "3 hours",
+      explanation: "Time = Distance ÷ Speed = 180 ÷ 60 = 3 hours"
+    },
+    {
+      question: "What is the average of first five even numbers?",
+      options: ["5", "6", "4", "8"],
+      answer: "6",
+      explanation: "Average = (2 + 4 + 6 + 8 + 10) ÷ 5 <br>= 30 ÷ 5 <br>= 6"
+    },
+    {
+      question: "Who is the GOAT of Football?",
+      options: ["Pele", "Diego Maradona", "Cristiano Ronaldo", "Lionel Messi"],
+      answer: "Lionel Messi",
+      explanation: "No need, because it’s a fact and we all know that."
+    }
+  ],
 
   science: [
     { question: "Which gas is used in fire extinguishers?", options: ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"], answer: "Carbon Dioxide", explanation: "Carbon dioxide is non-flammable and displaces oxygen, helping to suffocate fires and prevent them from spreading." },
@@ -111,7 +111,7 @@ function startQuiz(category) {
       });
 
       questions = selected;
-    } 
+    }
     else {
       questions = allQuestions[category];
     }
@@ -247,3 +247,4 @@ function showScore() {
     reviewDiv.appendChild(block);
   });
 }
+
